@@ -1,9 +1,20 @@
-# Installation Guide
+# MCP Basic Package
+
+An MCP server with an `add` tool that adds two integers.
+
+## Prerequisites
+
+- [uv](https://docs.astral.sh/uv/) installed (provides the `uvx` command)
+
+## Installation Guide
+
+Add the following to your MCP client's config file (for example, Claude Desktop's `claude_desktop_config.json`):
+
 ```json
 {
   "mcpServers": {
     "add_tool": {
-      "command": "/opt/homebrew/bin/uvx",
+      "command": "uvx",
       "args": [
         "--from",
         "git+https://github.com/zubyranks/mcp-basic-package.git",
@@ -14,11 +25,8 @@
 }
 ```
 
+## Run the MCP Server from GitHub
 
-
-
-## Run the mcp server from github
-```
+```bash
 uvx --from git+https://github.com/zubyranks/mcp-basic-package.git mcpserver
 ```
-
