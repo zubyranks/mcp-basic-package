@@ -4,9 +4,6 @@ mcp = MCPServer("Demo")
 
 
 @mcp.tool()
-def add(a: int, b: int) -> int:
-    """Add two integers together."""
-    try:
-        return a + b
-    except Exception as e:
-        raise ValueError(f"An error occurred while adding the numbers: {e}")
+def add(a: int, b: int) -> str:
+    """Add two integers together and return a string."""
+    return f"The sum of {a} and {b} is {a + b}"
