@@ -2,14 +2,14 @@
 ```json
 {
   "mcpServers": {
-    "add": {
+    "add_tool": {
       "command": "/opt/homebrew/bin/uvx",
       "args": [
         "--from",
         "git+https://github.com/zubyranks/mcp-basic-package.git",
         "mcpserver"
       ]
-    },
+    }
   }
 }
 ```
