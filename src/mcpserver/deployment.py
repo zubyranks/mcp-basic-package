@@ -4,6 +4,6 @@ mcp = MCPServer("Demo")
 
 
 @mcp.tool()
-def add(a: int, b: int) -> str:
+def add(a: int, b: int) -> int:
     """Add two integers together and return a string."""
-    return f"The sum of {a} and {b} is {a + b}"
+    return a + b
